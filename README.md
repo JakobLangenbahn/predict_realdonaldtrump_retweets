@@ -2,12 +2,10 @@
 
 ## Abstract
 
-Twitter is one of the most popular platforms for expressing opinions, thoughts and updates, but it is also used to influence people and is a "tactic" widely used in election campaigns. President Donald Trump's Twitter account is very popular, his tweet frequency is relatively high, and his tweets are liked and retweeted hundreds of thousands of times.
-This notebook implements a regression model to predict the number of retweets of a particular tweet from @realdonaldtrump. Additionally the meaning of features is evaluated and compared.
+There are few topics that polarize as much as Donald Trump's tweets. This project explores the question of which factors contribute to the fact that a tweet is retweeted particularly often. Based on Donald Trump's tweets since his inauguration, different regression models were implemented to predict the amount of retweets and the results were interpreted using SHAP values. The final model is a random forest witha RMSE of 11,253 on the test set. It seems like the variables number of mentions, including of urls, month of creation, text length and a few special words have a particular high influence on the retweet count.
 
-The result of this notebook is, besides the prediction model, a set of important characteristics for a high number of retweets. These can be used to increase the retweet rate of candidates for future election campaigns. Our model can be used to decide on which parts to focus on when tweeting (length, specific hashtags, time of day, etc.) in order to maximize the number of retweets and gain popularity or even become viral.
 
-Potential improvements:
+## Potential improvements:
 * Mine data directly from twitter
 * Improve feature generation
 * Improve model
